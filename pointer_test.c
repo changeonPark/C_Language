@@ -1,9 +1,13 @@
 #include <stdio.h>
 
-void main(){
-    int num = 69;
-    int *pointer = &num;
+void pointer(){
+    int array[] = { 1, 2, 3, 4 ,5};
+    int i;
+    for(i = 0; i < 5; i++){
+        printf("%d\n", &array[i]);
+    }
+}
 
-    printf("num is %d\n", *pointer);
-    
+void main(){
+    pointer();
 }
