@@ -26,7 +26,7 @@ void exstr02(){
 }
 
 /*void exstr03(){
-//gets_s 함수는 버퍼의 크기를 지킴. 지정된 크기 이상으로 입력 받을 시 프로그램 종료.
+//gets_s 함수는 버퍼의 크기를 지킴. 지정된 크기 이상으로 입력 받을 시 프로그램 종료.(runtime error)
 //vs code에선 gets_s 사용 안됨.
     char str[100];
     gets_s(str, sizeof(str));
@@ -38,13 +38,13 @@ void exstr03(){
     char str2[20] = "chanyong Park";
     char str3[20] = "geon";
     printf("String`s length = %d\n", strlen(str1));
-    printf("cheking = %d\n", strcmp(str2, str1));
+    printf("cheking = %d\n", strcmp(str1, str3));
     //strcpy(str1, str2);
-    //strcat(str1, str2);
-    //printf("%s\n", str1);
+    strcat(str1, str2);
+    printf("%s\n", str1);
     //strstr() = 긴 문자열에서 짧은 문자열의 위치를 반환.
     //주소값 자체를 반환 > 찾은 이후의 모든 문자열 반환.
-    printf("Searching이야압 string is %s\n", strstr(str1, str3));
+    //printf("Searching이야압 string is %s\n", strstr(str1, str3));
 }
 
 void main(){

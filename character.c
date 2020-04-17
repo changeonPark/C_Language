@@ -8,6 +8,7 @@
 */
 /*
     문자열 처리시 버퍼의 개념 많이 사용.
+    문자열 전체 동시 출력 X / 한 글자씩 출력.
     Buffer = 임시적으로 특정한 데이터 저장을 위해 사용.
     컴퓨터가 한번에 처리 가능한 양은 한정적이므로 Buffer에 담아서 처리.
 
@@ -33,7 +34,7 @@ void buffer(){
     printf("%c\n", ch);
 }
 void main(){
-    character01();
-    character02();
+    //character01();
+    //character02();
     buffer();
 }
