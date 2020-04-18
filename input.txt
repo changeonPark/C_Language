@@ -1,0 +1,5 @@
+4
+me 97
+father 64
+mother 71
+brohter 05

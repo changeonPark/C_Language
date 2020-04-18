@@ -22,11 +22,9 @@ void MallocArray(){
 
 void MallocArrayPractice(){
     int **arr = (int **)malloc(sizeof(int *) * 3); //2차원 배열 행 3개 생성.
-    
-    
     for(int i = 0; i < 3; i++){
         *(arr + i) = (int *)malloc(sizeof(int) * 3 ); //각 행에 3개 열 생성.
-        for(int j = 0; j < 3; j++){ //*(arr +i) = arr배열의 행, +j = 열
+        for(int j = 0; j < 3; j++){ //*(arr +i) = arr배열의 행, +j = 열에 값 부여.
               *(*(arr + i) + j) = i * 3 + j;
         }         
     }
